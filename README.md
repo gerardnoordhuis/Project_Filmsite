@@ -63,7 +63,7 @@ Voor ingelogde gebruikers
 Wat we niet doen: 
   * Eigen ratings, beoordelingen et cetera, omdat IMDb en TMDb hierin niet te overtreffen zijn in het aantal relevante beoordelingen.
 
-Samenvatting:
+### Samenvatting:
 
   * Met NederlandseFilms.nl willen wij een site maken die gebruikers de optie geeft om hun favoriete Nederlandse films op te zoeken. Verder kunnen gebruikers kijklijsten creëren en vrienden maken met andere gebruikers, om vervolgens lijsten met elkaar te delen. Gebruikers kunnen ook likes geven aan films en comments achterlaten.
 
@@ -80,46 +80,37 @@ Minimum viable product:
 
   * Het zou mooi zijn als het ook mogelijk is om per categorie de beste films te tonen. Het kan zijn dat  dit niet real-time mogelijk is, omdat veel film-API’s de beperking hebben dat er een maximum aantal data-aanvragen per tijdseenheid wordt gehanteerd. 
 
-Afhankelijkheden
+### Afhankelijkheden
 
-Nu je dit hebt gedaan (en je hebt inmiddels ook een beetje een beeld van hoe webapplicaties in elkaar zitten) kun je een eerste lijst van afhankelijkheden maken: dingen die je niet zelf programmeert maar wel moet gebruiken, begrijpen of regelen.
-
-Maak een lijst van de databronnen die je gekozen hebt voor je project, bijvoorbeeld de URL van een website waar je de API kunt vinden.
-Maak een lijst van externe componenten die je nodig hebt. Bijvoorbeeld Bootstrap voor het maken van een simpele website.
 Zoek een paar concurrende bestaande websites en beschrijf een paar punten die interessant zijn. Elke website heeft natuurlijk nét weer een andere insteek en het is goed om je bewust te zijn van de kracht van jouw website tegenover de concurrentie.
 Maak een lijst van de moeilijkste delen van de applicatie. Wat wordt veel uitzoekwerk? Wat is gewoon echt moeilijk? Wat heb je nodig om het makkelijker te maken? Deze lijst is waarschijnlijk makkelijker te maken als je al weer wat meer weet van webapplicaties maken, maar als je nu al iets hebt, noteer het in je document.
 
+#### Eventueel te gebruiken API’s:
 
-
-API
-Eventueel te gebruiken API’s;
-
-The Movie Database (IMDb)
+The Movie Database(TMDb)
 https://www.themoviedb.org/documentation/api 
-The Internet Database (TMDb)
-
 
 Filmtotaal
 http://api.filmtotaal.nl/ 
-OMDb
 
-
-
-
+IMDb Scraper (Third party)
 http://imdbpy.sourceforge.net/
 
-
+TMDb Wrapper (Third party)
 https://pypi.org/project/tmdbsimple/ 
-https://github.com/celiao/tmdbsimple 
+https://github.com/celiao/tmdbsimple
 
+#### Verdere sites en plug-ins:
 
-Bootstrap: Bootstrap geeft templates van webapplicaties.
+Bootstrap: 
 https://getbootstrap.com/docs/4.2/getting-started/introduction/
 
-
-Bootsnipp: Bootsnipp deelt een groot aantal designs. Hiermee kunnen we mooie design elementen importeren.
+Bootsnipp: 
 https://bootsnipp.com/
 
+#### Concurerende sites:
+
+www.imdb.com:
 
 
 
