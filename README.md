@@ -81,10 +81,6 @@ Minimum viable product:
   * Het zou mooi zijn als het ook mogelijk is om per categorie de beste films te tonen. Het kan zijn dat  dit niet real-time mogelijk is, omdat veel film-API’s de beperking hebben dat er een maximum aantal data-aanvragen per tijdseenheid wordt gehanteerd. 
 
 ### Afhankelijkheden
-
-Zoek een paar concurrende bestaande websites en beschrijf een paar punten die interessant zijn. Elke website heeft natuurlijk nét weer een andere insteek en het is goed om je bewust te zijn van de kracht van jouw website tegenover de concurrentie.
-Maak een lijst van de moeilijkste delen van de applicatie. Wat wordt veel uitzoekwerk? Wat is gewoon echt moeilijk? Wat heb je nodig om het makkelijker te maken? Deze lijst is waarschijnlijk makkelijker te maken als je al weer wat meer weet van webapplicaties maken, maar als je nu al iets hebt, noteer het in je document.
-
 #### Eventueel te gebruiken API’s:
 
 The Movie Database(TMDb)
@@ -110,18 +106,27 @@ https://bootsnipp.com/
 
 #### Concurerende sites:
 
-www.imdb.com:
+https://www.imdb.com:
+ * Niet gelimiteerd tot Nederlandse films, maar heeft ze wel.
+ * Bindingen met bedrijven als Amazon
+ * Heeft pagina's met nieuws over de filmindustrie.
+ * Behandelt ook Video Games
+ 
+https://www.tmdb.com:
+ * Heeft links naar de films die momenteel in de bioscoop draaaien.
+ * Internetfora over films
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ https://www.filmvandaag.nl:
+  * Heeft links naar de films die momenteel in de bioscoop draaaien.
+  * Heeft links naar de series/films die te zien zijn op Netfilx
+  * Geeft releases op dvd/bluray aan.
+  
+ 
+#### Moeilijke delen:
+Veel code zal lastig worden. De zaken waarvan we momenteel verwachten dat ze lastig zullen worden:
+* Andere gebruikers toevoegen a.d.h.v. gebruikersnaam
+* Vrienden berichten sturen
+* Filmtitels delen met een vriend
+* Films toevoegen aan een gezamenlijke lijst (update 2 lijsten)  
+* Lijst met top gebruikers bekijken 
+* Mensen volgen
