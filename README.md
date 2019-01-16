@@ -1,7 +1,7 @@
 # nederlandsefilms.nl
-## Isa-Ali Kirca       88888888
-## Gerard Noordhuis    88888888
-## Patrick Smit        11433604
+## Isa-Ali Kirca &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12014672
+## Gerard Noordhuis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11919582
+## Patrick Smit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11433604
 
 Voor ingelogde gebruikers
   * 1.1 Gebruikersinteractie/ Vrienden op het platform
