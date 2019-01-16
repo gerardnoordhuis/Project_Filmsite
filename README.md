@@ -11,70 +11,69 @@ Voor ingelogde gebruikers
     * Kijken welke films je met vrienden ‘in common’ hebt
 
 
-1.2 Eigen account
-  1.2.1 Account informatie
-    Vul account details in (wachtwoord, e-mail, gebruikersnaam, geslacht)
-    Valideer account
-    Koppel Social Media accounts met NLfilms account
-    Profiel bewerken (wachtwoord, e-mail, gebruikersnaam? geslacht? verander koppeling met social media)
-  1.2.2 Films opslaan etc.
-    Films toevoegen aan een lijst met favorieten
-    Film toevoegen aan een kijklijst
-    Film toevoegen aan ‘check-in’ of historie
-    Een rating toevoegen aan TMDb
+* 1.2 Eigen account
+  * 1.2.1 Account informatie
+    * Vul account details in (wachtwoord, e-mail, gebruikersnaam, geslacht)
+    * Valideer account
+    * Koppel Social Media accounts met NLfilms account
+    * Profiel bewerken (wachtwoord, e-mail, gebruikersnaam? geslacht? verander koppeling met social media)
+  * 1.2.2 Films opslaan etc.
+    * Films toevoegen aan een lijst met favorieten
+    * Film toevoegen aan een kijklijst
+    * Film toevoegen aan ‘check-in’ of historie
+    * Een rating toevoegen aan TMDb
 
 
-Homepage:
-  Item
-  Omschrijving
-  Zoekbalk
+* Homepage:
+  * Item
+  * Omschrijving
+  * Zoekbalk
 
 
-1.3.1 Pagina van film:
-  voeg film toe aan kijklijst
-  Samenvatting / Omschrijving
-  Weergeef de rating vanuit de API
-  Bekijk comments van gebruikers
-  (wanneer ingelogd:)
-  Schrijf een comment (over de film)
-  Geef een rating (wordt dorgestuurd naar TMDb)
+* 1.3.1 Pagina van film:
+  * voeg film toe aan kijklijst
+  * Samenvatting / Omschrijving
+  * Weergeef de rating vanuit de API
+  * Bekijk comments van gebruikers
+  * (wanneer ingelogd:)
+    * Schrijf een comment (over de film)
+    * Geef een rating (wordt dorgestuurd naar TMDb)
 
 
-Makkelijke extra’s
-  Delen via Whatsapp, Facebook, enz.
+* Makkelijke extra’s
+  * Delen via Whatsapp, Facebook, enz.
 
 
-Homepagina: Zoeken:
-  film → pagina met informatie (zie Minimum viable product)
-  acteur → pagina met de best beoordeelde films van de desbetreffende acteur
-  jaar → pagina met de best beoordeelde films van dat jaar
+* Homepagina: Zoeken:
+  * film → pagina met informatie (zie Minimum viable product)
+  * acteur → pagina met de best beoordeelde films van de desbetreffende acteur
+  * jaar → pagina met de best beoordeelde films van dat jaar
 
 
-Account:
-  maak een account aan
-  (wanneer ingelogd:)
-  Likes
-  Friend request (om naar elkaars accounts te kijken)
+* Account:
+  * maak een account aan
+  * (wanneer ingelogd:)
+    * Likes
+    * Friend request (om naar elkaars accounts te kijken)
 
 
 
-Wat we niet doen:
-  Eigen ratings, beoordelingen et cetera, omdat IMDb en TMDb hierin niet te overtreffen zijn in het aantal relevante beoordelingen.
+Wat we niet doen: 
+  * Eigen ratings, beoordelingen et cetera, omdat IMDb en TMDb hierin niet te overtreffen zijn in het aantal relevante beoordelingen.
 
 Producten zijn altijd een combinatie van allerlei features. die beschrijven wat je er mee kunt. Bij websites heeft elke (grote) feature vaak een eigen scherm. Maar het is niet precies hetzelfde, want kleinere features zijn vaak details van een webpagina, en je hebt ook grote features die op meerdere plekken in de applicatie invloed hebben. Kijken we weer naar Twitter, dan kun je denken aan deze features:
 
-  gebruikers kunnen andere gebruikers volgen
-  gebruikers kunnen een lijst zien van tweets van andere gebruikers die zij volgen (de timeline)
-  gebruikers kunnen gewaarschuwd worden als:
-  er een nieuwe tweet is geplaatst door een gebruiker die zij volgen
-  er een nieuw privébericht aan ze is gestuurd
-  gebruikers kunnen kiezen of ze waarschuwingen per mail, sms, popup willen ontvangen
-  ….
+  * gebruikers kunnen andere gebruikers volgen
+  * gebruikers kunnen een lijst zien van tweets van andere gebruikers die zij volgen (de timeline)
+  * gebruikers kunnen gewaarschuwd worden als:
+  * er een nieuwe tweet is geplaatst door een gebruiker die zij volgen
+  * er een nieuw privébericht aan ze is gestuurd
+  * gebruikers kunnen kiezen of ze waarschuwingen per mail, sms, popup willen ontvangen
   
 
-Samenvatting
+Samenvatting:
 
-Beschrijf in 4–5 zinnen wat het doel van je webapplicatie is, waarom het een uniek idee is1 en wat bezoekers er aan hebben. Schaaf een paar keer aan je omschrijving. Probeer ‘m kort en bondig te houden, maar wel zodat anderen er een snel idee van je applicatie bij krijgen. Denk ook aan spelfouten
+  * Met NederlandseFilms.nl Willen wij een site maken die gebruikers de optie geeft om hun favoriete Nederlandse films op te zoeken. Verder kunnen gebruikers kijklijsten creëren en vrienden maken met andere gebruikers, om vervolgens lijsten met elkaar te delen. Gebruikers kunnen ook likes geven aan films en comments achterlaten.
 
 
 Minimum viable product
