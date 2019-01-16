@@ -3,6 +3,7 @@
 ## Gerard Noordhuis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11919582
 ## Patrick Smit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11433604
 
+### Overzicht
 Voor ingelogde gebruikers
   * 1.1 Gebruikersinteractie/ Vrienden op het platform
     * Anderen toevoegen a.d.h.v. gebruikersnaam (accepteren, weigeren)
@@ -36,29 +37,24 @@ Voor ingelogde gebruikers
     * Geef een rating (wordt dorgestuurd naar TMDb)
 
 
-* Homepage:
-  * Item
-  * Omschrijving
-  * Zoekbalk
+* 1.4 Homepage:
+  * 1.4.1 Homepagina: Layout
+    * Item
+    * Omschrijving
+    * Zoekbalk
+  * 1.4.2 Homepagina: Zoeken:
+    * film → pagina met informatie (zie Minimum viable product)
+    * acteur → pagina met de best beoordeelde films van de desbetreffende acteur
+    * jaar → pagina met de best beoordeelde films van dat jaar
 
-
-* Makkelijke extra’s
-  * Delen via Whatsapp, Facebook, enz.
-
-
-* Homepagina: Zoeken:
-  * film → pagina met informatie (zie Minimum viable product)
-  * acteur → pagina met de best beoordeelde films van de desbetreffende acteur
-  * jaar → pagina met de best beoordeelde films van dat jaar
-
-
-* Account:
+* 1.5 Account:
   * maak een account aan
   * (wanneer ingelogd:)
     * Likes
     * Friend request (om naar elkaars accounts te kijken)
-
-
+    
+* Mogelijke extra’s
+  * Delen via Whatsapp, Facebook, enz.
 
 Wat we niet doen: 
   * Eigen ratings, beoordelingen et cetera, omdat IMDb en TMDb hierin niet te overtreffen zijn in het aantal relevante beoordelingen.
