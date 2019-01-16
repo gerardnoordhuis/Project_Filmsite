@@ -23,15 +23,15 @@ Voor ingelogde gebruikers
 
 * 1.2 Eigen account
   * 1.2.1 Account informatie
-    * Vul account details in (wachtwoord, e-mail, gebruikersnaam, geslacht)
-    * Valideer account
-    * Koppel Social Media accounts met NLfilms account
-    * Profiel bewerken (wachtwoord, e-mail, gebruikersnaam? geslacht? verander koppeling met social media)
+   * Vul account details in (wachtwoord, e-mail, gebruikersnaam, geslacht)
+   * Valideer account
+   * Koppel Social Media accounts met NLfilms account
+   * Profiel bewerken (wachtwoord, e-mail, gebruikersnaam? geslacht? verander koppeling met social media)
   * 1.2.2 Films opslaan etc.
-    * Films toevoegen aan een lijst met favorieten
-    * Film toevoegen aan een kijklijst
-    * Film toevoegen aan ‘check-in’ of historie
-    * Een rating toevoegen aan TMDb
+   * Films toevoegen aan een lijst met favorieten
+   * Film toevoegen aan een kijklijst
+   * Film toevoegen aan ‘check-in’ of historie
+   * Een rating toevoegen aan TMDb
 
 * 1.3 Pagina van film:
   * voeg film toe aan kijklijst
