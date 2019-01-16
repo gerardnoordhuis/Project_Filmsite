@@ -9,7 +9,6 @@
   * Met NederlandseFilms.nl willen wij een site maken die gebruikers de optie geeft om hun favoriete Nederlandse films op te zoeken. Verder kunnen gebruikers kijklijsten creëren en vrienden maken met andere gebruikers, om vervolgens lijsten met elkaar te delen. Gebruikers kunnen ook likes geven aan films en comments achterlaten. 
 
 ### Features
-Bekijk [hier](https://docs.google.com/presentation/d/1Dk9pYlrxR6hi45ncdenz7bOs3y8t3Wdz3CnpoxP1xaI/edit?usp=sharing) de schetsen.
 
 Voor ingelogde gebruikers
   * 1.1 Gebruikersinteractie/ Vrienden op het platform
@@ -65,6 +64,8 @@ Voor ingelogde gebruikers
 
 Wat we niet doen: 
   * Eigen ratings, beoordelingen et cetera, omdat IMDb en TMDb hierin niet te overtreffen zijn in het aantal relevante beoordelingen.
+  
+Bekijk [hier](https://docs.google.com/presentation/d/1Dk9pYlrxR6hi45ncdenz7bOs3y8t3Wdz3CnpoxP1xaI/edit?usp=sharing) de schetsen.
   
 ### Minimum viable product:
   * Er moet gezocht kunnen worden naar een specifieke film. Wanneer de film gevonden wordt, omvat de getoonde pagina in ieder geval:
