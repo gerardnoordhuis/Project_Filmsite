@@ -1,14 +1,14 @@
 # Project_Filmsite
 
 Voor ingelogde gebruikers
-  1.1 Gebruikersinteractie/ Vrienden op het platform
-    Anderen toevoegen a.d.h.v. gebruikersnaam (accepteren, weigeren)
-    Vrienden berichten sturen
-    Filmtitel delen met een vriend (in de eerder genoemde chat?)
-    Films toevoegen aan een gezamenlijke lijst (update 2 lijsten)  
-    Lijst met top gebruikers bekijken 
-    Mensen volgen
-    Kijken welke films je met vrienden ‘in common’ hebt
+  * 1.1 Gebruikersinteractie/ Vrienden op het platform
+    * Anderen toevoegen a.d.h.v. gebruikersnaam (accepteren, weigeren)
+    * Vrienden berichten sturen
+    * Filmtitel delen met een vriend (in de eerder genoemde chat?)
+    * Films toevoegen aan een gezamenlijke lijst (update 2 lijsten)  
+    * Lijst met top gebruikers bekijken 
+    * Mensen volgen
+    * Kijken welke films je met vrienden ‘in common’ hebt
 
 
 1.2 Eigen account
