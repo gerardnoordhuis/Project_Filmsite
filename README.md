@@ -3,6 +3,7 @@
 ## Gerard Noordhuis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11919582
 ## Patrick Smit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11433604
 
+Bekijk [hier](https://docs.google.com/presentation/d/1Dk9pYlrxR6hi45ncdenz7bOs3y8t3Wdz3CnpoxP1xaI/edit?usp=sharing) de schetsen.
 
 ### Samenvatting:
 
@@ -65,7 +66,6 @@ Voor ingelogde gebruikers
 Wat we niet doen: 
   * Eigen ratings, beoordelingen et cetera, omdat IMDb en TMDb hierin niet te overtreffen zijn in het aantal relevante beoordelingen.
   
-Bekijk [hier](https://docs.google.com/presentation/d/1Dk9pYlrxR6hi45ncdenz7bOs3y8t3Wdz3CnpoxP1xaI/edit?usp=sharing) de schetsen.
   
 ### Minimum viable product:
   * Er moet gezocht kunnen worden naar een specifieke film. Wanneer de film gevonden wordt, omvat de getoonde pagina in ieder geval:
