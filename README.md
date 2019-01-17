@@ -83,16 +83,16 @@ Wat we niet doen:
 ### Afhankelijkheden
 #### Eventueel te gebruiken API’s:
 
-The Movie Database(TMDb)
+The Movie Database(TMDb):
 https://www.themoviedb.org/documentation/api 
 
-Filmtotaal
+Filmtotaal:
 http://api.filmtotaal.nl/ 
 
-IMDb Scraper (Third party)
+IMDb Scraper (Third party):
 http://imdbpy.sourceforge.net/
 
-TMDb Wrapper (Third party)
+TMDb Wrapper (Third party):
 https://pypi.org/project/tmdbsimple/ 
 https://github.com/celiao/tmdbsimple
 
