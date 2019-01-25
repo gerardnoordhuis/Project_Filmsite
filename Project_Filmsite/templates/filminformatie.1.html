@@ -14,28 +14,24 @@
   </head>
   <style>
     #wrap {
-       width:95%;
+       width:auto;
        margin:0 auto;
     }
     #linkerkolom {
        float:left;
-       width:25%;
+       width:30%;
     }
     #rechterkolom {
        float:right;
-       width:75%;
+       width:70;
     }
 
+  img {
+      max-width: 185px;
+      height: auto;
+      width: auto; /* ie8 */
+  }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  #linkerkolom {
-    width: 100%;
-  }
-  #rechterkolom {
-    width: 100%;
-  }
-}
 
   </style>
   <body>
@@ -153,7 +149,7 @@
         {% block main %}
         <div id="wrap">
           <div id="linkerkolom">
-            <p><img src="http://image.tmdb.org/t/p/w185{{tmdb.poster_path}}" class="homepage_poster"></p>
+            <img src="http://image.tmdb.org/t/p/w185{{tmdb.poster_path}}" class="homepage_poster" style="margin-left:30px;">
           </div>
 
           <div id="rechterkolom">
@@ -163,11 +159,11 @@
 
               {# Genoeg stemmen #}
               {% if tmdb.vote_count > 20 %}
-              <h4 style="display: inline"><b>Score: </b></h4><h5 style="display: inline">{{tmdb.vote_average}}</h5>
-              <p><a>Dit is een alternatieve score, afkomstig van <i>TheMovieDatabase</i> i.p.v. IMDb.</a></p>
+              <h3><b>Score: </b> {{tmdb.vote_average}}</h3>
+              <p><h5>Dit is een alternatieve score van <i>TheMovieDatabase</i>.</h5></p>
               {# Niet genoeg stemmen #}
               {% else %}
-              <h4 style="display: inline"><b>Score: </b></h4><h5 style="display: inline">Niet genoeg stemmen beschikbaar.</h5>
+              <h3><b>Score: </b></h3><h4>Niet genoeg stemmen beschikbaar.</h4>
               {% endif %}
               <h3><b>Jaar: </b> {{tmdb.release_date[:4]}}</h3>
               <a><b>Omschrijving: </b>{{tmdb.overview}}</a>

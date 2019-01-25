@@ -134,6 +134,7 @@
         <form action="/filminfo" method="post">
             <input type="hidden" name="tmdb_id" value="{{i.id}}"></input>
             <button type="submit" name="tmdb_id"><IMG src="http://image.tmdb.org/t/p/w185{{i.poster_path}}" title="{{i.title}} ({{i.release_date[:4]}})"></button>
+
           </form>
 
           {% endif %}
