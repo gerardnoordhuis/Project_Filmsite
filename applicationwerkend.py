@@ -184,60 +184,27 @@ def vriendenlijst():
     popular_results = popular["results"]
 '''
 def zoeken(zoekterm, pagenr):
-
-    # ophalen (per pagina)
     from urllib.request import urlopen
-    url = "https://api.themoviedb.org/3/search/movie?api_key=9c226374f10b2dcd656cf7c348ee760a&language=nl&query=" + zoekterm + "&include_adult=false&page=" + str(pagenr)
-    response = json.loads(str((requests.get(url).content).decode('UTF-8')))
-
-    '''
-    # geen resultaten
-    if response["total_results"] == 0:
+    url = "https://api.themoviedb.org/3/search/movie?api_key=9c226374f10b2dcd656cf7c348ee760a&language=nl&query=" + zoekterm + "&include_adult=false&page=" + pagenr
+    zoekresultaten = (json.loads(str((requests.get(url).content).decode('UTF-8'))))["results"]
+    if not zoekresultaten:
         return False
-
-    # als paginanummer niet voorkomt
-    elif int(pagenr) > response["total_pages"]:
-        return False
-
-    else:
-    '''
-    return response
-
-
+    else: return zoekresultaten
 
 @app.route("/zoeken", methods=["GET", "POST"])
 def zoekresultaat():
 
     if request.method == "POST":
         zoekterm = request.form.get("zoekterm")
-
-        if not zoekterm: return apology("Geen zoekterm")
-
-        # resultaten pagina 1 - 30
-        elif zoeken(zoekterm, 1) != False:
-            zoekresultaten = zoeken(zoekterm, 1)["results"]
-            x = 2
-            while x < 30:
-                zoekresultaten += zoeken(zoekterm, x)["results"]
-                x += 1
-            return render_template("zoekresultaten.html", zoekresultaten=zoekresultaten)
-
-        else: return apology("Iets ging mis")
-
-# Onderstaande ding is backup voor def zoekresultaat():
-'''
-    if request.method == "POST":
-        zoekterm = request.form.get("zoekterm")
         if not zoekterm:
             return apology("Geen zoekterm")
-        elif zoeken(zoekterm, 1) != False:
-            zoekresultaten = zoeken(zoekterm, 1)
+        elif zoeken(zoekterm, "2") != False:
+            zoekresultaten = zoeken(zoekterm, "2")
             return render_template("zoekresultaten.html", zoekresultaten=zoekresultaten)
-'''
-
-
         ##als het nederlands is
         #"original_language":"nl"
+
+
  #       if not stockinfo:
  #           return apology("Stock is not valid")
  #       return render_template("stockprice.html", aandeel=stockinfo)
@@ -245,30 +212,4 @@ def zoekresultaat():
  #       return render_template("quote.html")
 
     # zoekresultaat TMDb id naar IMDb id (als OMDb input)
-   # "https://api.themoviedb.org/3/movie/569050?api_key=9c226374f10b2dcd656cf7c348ee760a&language=nl"
-
-@app.route("/filminfo", methods=["GET", "POST"])
-def filminformatie():
-
-
-    tmdbid = request.form.get("tmdb_id")
-    if request.method == "POST":
-
-        # Alle informatie ophalen voor zoekresultaat (TMDb)
-        from urllib.request import urlopen
-        tmdb_url = str("https://api.themoviedb.org/3/movie/" + tmdbid + "?api_key=9c226374f10b2dcd656cf7c348ee760a&language=nl")
-        tmdb_response = json.loads(str((requests.get(tmdb_url).content).decode('UTF-8')))
-
-        # Als er geen IMDb id genoemd wordt
-        if tmdb_response["imdb_id"] == None or "tt" not in tmdb_response["imdb_id"]:
-            omdb_response = None
-
-        # Alle informatie ophalen voor zoekresultaat (OMDb)
-        else:
-            omdb_url = "http://www.omdbapi.com/?i=" + tmdb_response["imdb_id"] + "&apikey=be77e5d"
-            omdb_response = json.loads(str((requests.get(omdb_url).content).decode('UTF-8')))
-        return render_template("filminformatie.html", tmdb=tmdb_response, omdb=omdb_response)
-        print(omdb_url)
-
-
-
+    "https://api.themoviedb.org/3/movie/569050?api_key=9c226374f10b2dcd656cf7c348ee760a&language=nl"

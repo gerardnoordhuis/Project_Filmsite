@@ -11,11 +11,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
-        <title>NL Film | Inloggen</title>
+        <title>NL Film | Home</title>
     </head>
 
     <body>
-
+        {% if session.user_id %}
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -31,65 +31,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('login') }}">Inloggen<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="{{ url_for('register') }}">Registreren<span class="sr-only">(current)</span></a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('overons') }}">Over ons</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0" action="/zoeken" method="post">
+                <form class="form-inline my-2 my-lg-0" action="/zoeken&session=true" method="post">
                     <div class="form-group">
                     <input autocomplete="off" autofocus class="form-control" class="form-control mr-sm-2" type="text" name="zoekterm" placeholder="Zoekterm" aria-label="Search">
                     </div>
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Zoek</button>
                 </form>
-
             </div>
         </nav>
+        {% endif %}
+        <center><bold><h3>Zoekresultaten</h3></bold></center>
+        <center><hr>
+        {% block main %}
+        <!-- Tabellen in JinJa; https://stackoverflow.com/questions/9198334/how-to-build-up-a-html-table-with-a-simple-for-loop-in-jinja2 -->
+        {%- for i in zoekresultaten[:12] -%}
+         <IMG src="http://image.tmdb.org/t/p/w185{{i.poster_path}}" class="homepage_poster">
+        {%- endfor -%}
 
-        <form action="{{ url_for('login') }}" method="post">
-            <div class="container">
-                <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                    <div class="panel panel-info" >
-                        <div class="panel-heading">
-                            <div class="panel-title"><h1>Inloggen</h1></div>
-                            <div style="float:right; font-size: 90%; position: relative; top:-40px"><a href="{{ url_for('wachtwoord') }}">Wachtwoord vergeten?</a></div>
-
-                        <div style="padding-top:30px" class="panel-body" >
-
-                            <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-
-                            <form id="loginform" class="form-horizontal" role="form">
-
-                                <div class="form-group">
-                                    <input autocomplete="off" autofocus class="form-control" name="gebruiker-inloggen" placeholder="Gebruikersnaam of Email" type="text"/>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" name="wachtwoord-inloggen" placeholder="Wachtwoord" type="password"/>
-                                </div>
-
-                                <div style="margin-top:10px" class="form-group">
-                                    <!-- Button -->
-
-                                    <div class="form-group">
-                                        <div class="col-sm-12 controls">
-                                            <button class="btn btn-success" type="submit">Login</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="col-md-12 control">
-                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                            Heb je nog geen account?
-                                            <a href="{{ url_for('register') }}">Meld je hier dan aan!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </form>
+        {% endblock %}
+        </center>
     </body>
 </html>
